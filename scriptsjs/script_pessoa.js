@@ -10,6 +10,7 @@ const pessoas = []
 
 //capturar evento do submit do formulário
 formPessoa.addEventListener('submit', (evt)=>{
+    inte
     evt.preventDefault()
 
     const dadosForm = new FormData(formPessoa)
@@ -21,5 +22,16 @@ formPessoa.addEventListener('submit', (evt)=>{
 
         
     }
-
+    //Chamando a função addPessoa e passando o objeto literal pessoa
+    addPessoa(pessoa)
+    //Limpando o formulário
+    formPessoa.reset()
 })
+
+//FUNÇÕES PARA CRUD
+//FUNÇÃO PARA ADICIONAR PESSOA
+
+const addPessoa = (objPessoa)=>{
+
+    pessoas.push(objPessoa)
+}
