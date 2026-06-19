@@ -2,7 +2,9 @@
     width: 500px;
     min-height: 500px;
     margin: 20px auto;
-
+    border: solid 1px #718282; 
+    padding: 25px;
+    border-radius: 8px;
 }
 
 h3{
