@@ -1,0 +1,42 @@
+#geral{
+    width: 500px;
+    min-height: 500px;
+    margin: 20px auto;
+
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#div-form, #div-lista-pessoas{
+    margin: 20px 0px;
+    padding: 5px;
+}
+
+form{
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 8px;
+    color: black;
+
+}
+
+label, input{
+    display: block;
+    margin: 10px 0px;
+    padding: 1px 10px;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#div-lista-pessoas{
+    background-color:rgb(134, 207, 255);
+    border-radius: 15px;
+}
