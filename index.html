@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desconto de rendat</title>
+    <link rel="stylesheet" href="">
+    <script src="js/js.js"></script>
+
 </head>
 <body>
     <div id="geral">
+        <h3>São isentos as pessoas menores de idade com renda até de R$ 1700,00 </h3>
+        <p>até R$ 5000,00 -> 5%</p>
+        <p>de R$ 5001,00 até R$ 8000,00-> 8%</p>
+        <p>de R$ 8001,00 até R$ 10000,00-> 10%</p>
+        <p>de R$ 10001,00-> 3%</p>
 
 
-        
+        <div id="div-form">
+            <form for="nome">
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="idade">Idade</label>
+                <input type="text" name="idade" id="idade">
+                <label for="renda">Renda</label>
+                <input type="text" name="renda" id="renda">
+
+                <button type="submit">adicionar</button>
+                <button type="reset">limpar</button>
+
+
+            </form>
+        </div>
+        <div id="div-lista-pessoas">
+            <br>
+            //exemplo de como deve ser: <br><br>
+            Nome, idade, quando ganha, se é isento 
+            ou o quanto deve pagar <br>
+            jose 30 1200, isento
+        </div>
     </div>
 </body>
 </html>
