@@ -42,3 +42,9 @@ button{
     background-color:rgb(134, 207, 255);
     border-radius: 15px;
 }
+
+.item-pessoa{
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: aliceblue;
+}

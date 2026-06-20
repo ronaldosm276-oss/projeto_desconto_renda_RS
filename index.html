@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="scriptjs/script_pessoa.js" defer></script>
+    <script src="scriptsjs/script_pessoa.js" defer></script>
 <!-- Não esqueça do defer -->
 </head>
 
@@ -23,19 +23,19 @@
 
 
         <div id="div-form">
-            <form for="nome">
+            <form id="form-pessoa">
 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
 
                 <label for="idade">Idade</label>
-                <input type="text" name="idade" id="idade">
+                <input type="text" name="idade" id="idade" required>
 
                 <label for="renda">Renda</label>
-                <input type="text" name="renda" id="renda">
+                <input type="text" name="renda" id="renda" required>
 
-                <button type="submit">adicionar</button>
-                <button type="reset">limpar</button>
+                <button type="submit">Adicionar</button>
+                <button type="reset">Limpar</button>
 
 
             </form>
@@ -46,7 +46,7 @@
             Nome, idade, quando ganha, se é isento
             ou o quanto deve pagar <br>
             jose 30 1200, isento <br>
-            andre 43 5300, paga 8%, valor a pagar X<br>
+            andre 43 5300, paga 8%, valor a pagar X<br><br><br>
         </div>
     </div>
 </body>
