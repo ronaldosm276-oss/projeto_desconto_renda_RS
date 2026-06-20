@@ -1,5 +1,7 @@
 import { calculoDesconto } from "./script_calc.js"
 
+
+
 const formPessoa = document.querySelector('#form-pessoa')
 const divPessoa = document.querySelector('#div-lista-pessoas')
 
@@ -15,7 +17,7 @@ formPessoa.addEventListener('submit', (evt)=>{
     const dadosForm = new FormData(formPessoa)
 
     const pessoa = {
-        nome: dadosForm.get('nome'),
+        nome:  dadosForm.get('nome'),
         idade: dadosForm.get('idade'),
         renda: dadosForm.get('renda')
 
@@ -44,8 +46,8 @@ const listPessoa = () => {
     //percorre o array de pessoa com a estrutura de repetição forEach
     divPessoa.innerHTML = ''
     pessoas.forEach((elem, i)=>{
-        divPessoa.innerHTML += `<div class='item-pessoa'>${ i + 1 } - ${elem.nome} ${elem.idade} R$ ${parseFloat(elem.renda).toFixed(2).replace('.' , ',')} </div>`
+        divPessoa.innerHTML += `<div class='item-pessoa'>${ i + 1 } - Nome: ${elem.nome} - ${elem.idade} anos - R$ ${parseFloat(elem.renda).toFixed(2).replace('.' , ',')} - ${calculoDesconto(elem)}</div>`
     }
 //class é diferente, de qualquer maneira, referencie ela no css começando com . ; ou seja .itempessoa
-    )
+)
 }
